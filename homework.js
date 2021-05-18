@@ -2,6 +2,52 @@
 // member of the array, and returns a new array with that member removed.
 // For example, `remove(['Cadence', 'Ordel', 'Marion'], 'Marion')` results
 // in `['Cadence', 'Ordel']`.
+
+function remove (array, item) {
+    let newArray = []
+
+    for (let i = 0; i < array.length; i++) {
+        if (item !== array[i]) {
+            newArray.push(array[i])
+        }
+    }
+    return newArray
+}
+
+// function remove (array, item) {
+//     let newArray = array
+//     let idx = array.indexOf(item)
+//     newArray.splice(idx, 1)
+//     return newArray
+
+// }
+
+// function remove (array, item) {
+//     const name = array.indexOf(item)
+//     let newArray = array
+//     if (name === -1) {
+//         return newArray
+//     } else {
+//         newArray.splice(name, 1)
+//             return newArray
+//     }
+//  } 
+
+
+// function remove (array, item) {
+//     for (var i = array.length - 1; i >= 0; i--) {
+//         let name = array.indexOf(item)
+//         let newArray = array
+//         if (name !== -1) {
+//             return newArray
+//         } else {
+//             array.splice(name, 1)
+        
+//         }
+//     }   return newArray
+// }
+
+
 //
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
