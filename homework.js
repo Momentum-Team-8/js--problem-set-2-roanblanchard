@@ -55,8 +55,18 @@ function remove (array, item) {
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
 
+// done
+
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
+
+function sum (numbers) {
+    let bat = 0
+    for (let x of numbers) {
+      bat += x
+    }
+    return bat
+  }
 
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
