@@ -70,6 +70,15 @@ function sum (numbers) {
 
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
+function average (arr) {
+    let count = arr.length
+    let newSum = sum(arr)
+    if (arr.length === 0) {
+        return undefined
+    } else {
+        return newSum / count
+    }
+}
 
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
