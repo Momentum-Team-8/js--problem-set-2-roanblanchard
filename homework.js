@@ -83,6 +83,18 @@ function average (arr) {
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
 
+function minimum (array) {
+    let small = 0
+    for (let x of array) {
+        if (x === 0) {
+            return undefined
+        } else if (x < small || small === 0) {
+            small = Math.min(...array)
+            return small 
+        }
+    } 
+}   
+
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
 // implement sorting ourselves, however.
